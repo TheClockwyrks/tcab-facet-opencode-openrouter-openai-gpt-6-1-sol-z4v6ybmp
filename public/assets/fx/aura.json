@@ -1,0 +1,76 @@
+{
+  "dimensions": 2,
+  "field": {
+    "width": 128,
+    "height": 128
+  },
+  "durationMs": 1200,
+  "fps": 30,
+  "loop": true,
+  "emitters": [
+    {
+      "name": "splinters",
+      "shape": "disc",
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "extent": {
+        "radius": 22.0,
+        "size": [
+          1.0,
+          1.0,
+          0.0
+        ]
+      },
+      "emission": {
+        "mode": "rate",
+        "rate": 9.0
+      },
+      "lifetimeMs": 850.0,
+      "lifetimeSpread": 100.0,
+      "speed": 9.0,
+      "speedSpread": 3.15,
+      "direction": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "coneAngle": 180.0,
+      "forces": {},
+      "particle": {
+        "sizeCurve": {
+          "interp": "ease-out",
+          "from": 1.5,
+          "to": 0.0
+        },
+        "opacityCurve": {
+          "interp": "linear",
+          "from": 0.85,
+          "to": 0.0
+        },
+        "colorGradient": [
+          {
+            "color": "#ffffff",
+            "at": 0.0
+          },
+          {
+            "color": "#f5de9b",
+            "at": 0.3
+          },
+          {
+            "color": "#876b58",
+            "at": 1.0
+          }
+        ],
+        "rotation": 80.0
+      }
+    }
+  ],
+  "forces": {
+    "gravity": 12.0,
+    "drag": 1.8
+  },
+  "subEmitters": []
+}
